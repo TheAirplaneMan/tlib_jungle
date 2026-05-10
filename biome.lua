@@ -93,7 +93,7 @@ minetest.register_decoration({
 
 	fill_ratio = 0.00025, -- rarity
 
-	y_max = -64,   -- BELOW ground
+	y_max = -256,   -- BELOW ground
 	y_min = -31000,
 
         flags = "all_floors",
@@ -124,11 +124,27 @@ minetest.register_decoration({
 	place_on = {"tlib_jungle:mud_with_jungle_grass"},
 	sidelen = 16,
 
-	fill_ratio = 0.025, -- rarity
+	fill_ratio = 0.010, -- rarity
 
-	y_max = 31000,   	y_min = -31000,
+	y_max = -64,   	y_min = -31000,
 
         flags = "all_floors",
 
 	decoration = "tlib_jungle:jungle_grass_glowing",
+})
+
+minetest.register_decoration({
+	name = "tlib_jungle:fungus_jungle",
+	deco_type = "simple",
+
+	place_on = {"tlib_jungle:mud_with_jungle_grass"},
+	sidelen = 16,
+
+	fill_ratio = 0.008, -- rarity
+
+	y_max = -128,   	y_min = -31000,
+
+        flags = "all_floors",
+
+	decoration = "tlib_jungle:fungus_jungle",
 })
